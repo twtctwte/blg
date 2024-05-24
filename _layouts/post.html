@@ -83,19 +83,24 @@ layout: default
           </span>
         </a>
       {% endif %}
-      <link rel="stylesheet" href="https://blg.tawertwtc.xyz/assets/css/gitalk.css">
-<script src="https://blg.tawertwtc.xyz/assets/js/gitalk.min.js"></script>
-      <div id="gitalk-container"></div>
-      var gitalk = new Gitalk({
-    clientID: 'Ov23liNdm6yqxwqFq3hH',
-    clientSecret: 'ee12cfb268bab726c0d06f115c0425826ae81179',
-    repo: 'https://github.com/tawer-blog/pinglun',
-    owner: 'tawer-blog',
-    admin:  ['tawer-blog'],
-    id: location.pathname,      // Ensure uniqueness and len
-    distractionFreeMode: false  // Facebook-like distraction
-})
-      gitalk.render('gitalk-container')
+      <!--使用gitalk来当做文章的评论部分-->
+	  <div id="gitalk-container"></div>
+	   <link rel="stylesheet" href="https://blg.tawertwtc.xyz/assets/css/gitalk.css">
+	   <script src="https://blg.tawertwtc.xyz/assets/js/gitalk.min.js"></script>
+	   <script src="/assets/js/md5.min.js"></script>
+	  <script>
+		   var gitalk = new Gitalk({
+			  clientID: 'Ov23liNdm6yqxwqFq3hH',
+			  clientSecret: '05e6cc0c60044822d17b5ee33aecca1a783b120c',
+			  repo: 'pinglun',
+			  owner: 'tawer-blog',
+			  admin: ['tawer-blog'],
+			  id:  md5(location.href),      // Ensure uniqueness and length less than 50
+			  distractionFreeMode: true  // Facebook-like distraction free mode
+			})
+
+			gitalk.render('gitalk-container')
+		</script>
     </nav>
   </footer>
 
