@@ -83,6 +83,20 @@ layout: default
           </span>
         </a>
       {% endif %}
+      <div id="gitmentContainer"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+    owner: 'tawer-blog',
+    repo: 'https://github.com/tawer-blog/pinglun',
+    oauth: {
+        client_id: 'Ov23lilUl3pR5NFou2Ox',
+        client_secret: '87b7f741b6c7c81082777312e8b2f24b1a223a3d',
+    },
+});
+gitment.render('gitmentContainer');
+</script>
     </nav>
   </footer>
 
