@@ -25,12 +25,6 @@ exclude:
   - scripts/
   - README.md
   - jekyll-theme-hamilton.gemspec
-gitalk:
-  enable: true
-  github_id: tawer-blog # 你的Github ID/用户名
-  repo: pinglun # 评论存放的仓库名称，可以是Github Page(username.github.io)所在的仓库或者另建一个仓库
-  client_id: Ov23liNdm6yqxwqFq3hH # 前面拿到的Client ID
-  client_secret: 05e6cc0c60044822d17b5ee33aecca1a783b120c # 前面拿到的Client secret
 
 
 # Jekyll SEO Tag (Optional)
