@@ -2,7 +2,7 @@ title: Tawer
 description: Tawer の 博客
 author: Tawer
 avatar: /logo.png
-email: 
+email: admin@mail.tawertwtc.xyz
 plugins:
   - jekyll-seo-tag
   - jekyll-feed
